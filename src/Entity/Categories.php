@@ -12,6 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
 class Categories
 {
     use SlugTrait;
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
