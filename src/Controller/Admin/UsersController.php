@@ -13,7 +13,7 @@ class UsersController extends AbstractController
     #[Route('/', name: 'index')]
     public function index(UsersRepository $usersRepository): Response
     {
-//        $users = $usersRepository->findBy([], ['firstname' => 'asc']);
+        $users = $usersRepository->findby([],['firstname'=>'asc']);
         return $this->render('admin/users/index.html.twig', compact('users'));
     }
 }
